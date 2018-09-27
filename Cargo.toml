@@ -4,7 +4,12 @@ version = "0.1.0"
 authors = ["kittyhacker101 <kittyhacker101@protonmail.com>"]
 
 [dependencies]
-futures = { version = "*" }
-bytes = { version = "*" }
-openssl = { version = "*", features = ["v110"] }
+json = "*"
+futures = "*"
+mime = "*"
+mime_guess = "*"
+mime-sniffer = "*"
+bytes = "*"
+lazy_static = "*"
+openssl = { version = "*", features = ["vendored"] }
 actix-web = { version = "*", features = ["alpn", "brotli"] }
